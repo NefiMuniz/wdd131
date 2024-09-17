@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Nefi Muniz - Web Development Concepts">
+    <meta name="author" content="Nefi Muniz">
+    <title>WDD 131 - Dynamic Web Fundamentals - Nefi Muniz</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>WDD 131 - Nefi Muniz - Fall 2024</h1>
-    <h2>Testing sync</h2>
+    <!-- Header -->
+    <header>
+        <div class="title">
+            <h1>WDD 131: Dynamic Web Fundamentals</h1>
+        </div>
+    </header>
+    <!-- Menu -->
+    <nav class="menu">
+        <a href="#" class="dark-grey">LinkedIn</a>
+        <a href="https://byui.instructure.com/" class="dark-grey">I-Learn</a>
+        <a href="#" class="dark-grey">Scripture</a>
+        <a href="#" class="dark-grey">Final Project</a>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <section class="card about-me">
+            <h2>About Me</h2>
+            <p>My name is Nefi Muniz. I was born in Porto Seguro, Bahia, Brazil! But now I live in Vitória da Conquista, Bahia, Brazil.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt vehicula erat, eget feugiat augue posuere sit amet. Sed at felis magna. Nulla facilisi.</p>
+        </section>
+
+        <section class="card web-dev-resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="#">Dev.to Community</a></li>
+                <li><a href="#">Smashing Magazine</a></li>
+                <li><a href="#">CSS Tricks</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>©<span id="currentyear"></span> Nefi Muniz, Bahia, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

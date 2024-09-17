@@ -1,0 +1,130 @@
+/* Base styling for fonts and layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Darker red header & footer */
+header {
+    background-color: #5A0000;  /* Darker Red */
+    padding: 1rem;
+    text-align: center;
+}
+
+.title {
+    padding-bottom: 1rem;
+}
+
+h1 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/* Menu with dark grey background */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #333;  /* Dark Grey for the menu background */
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.menu a {
+    flex: 1;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Dark Grey for the first button */
+.dark-grey {
+    background-color: #555;
+}
+
+.dark-grey:hover {
+    background-color: #777;
+}
+
+.dark-red {
+    background-color: #8B0000;  /* Dark Red */
+}
+
+.dark-red:hover {
+    background-color: #A52A2A;
+}
+
+/* Layout for main content */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #8B0000;  /* Dark Red */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.about-me {
+    grid-column: 1 / 2;
+}
+
+.web-dev-resources {
+    grid-column: 2 / 3;
+    background-color: #f0f0f0;  /* Light background for the resources section */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #5A0000;  /* Darker Red */
+    color: white;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+/* Media Query for responsive design */
+@media screen and (max-width: 768px) {
+    /* Stack the menu items vertically */
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu a {
+        margin-bottom: 10px;
+    }
+
+    /* Adjust the grid layout to be single column */
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .about-me, .web-dev-resources {
+        grid-column: 1;
+    }
+}

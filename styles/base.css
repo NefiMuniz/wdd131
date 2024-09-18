@@ -113,7 +113,7 @@ figure {
 }
 figcaption {
     font-size: 0.9rem;
-    color: #666;
+    color: #000000;
 }
 
 .bahia-subtitle {
@@ -161,7 +161,7 @@ footer p {
 }
 
 footer .modif {
-    color: #555;
+    color: #e2dbdb;
 }
 
 /* Media Query for responsive design */

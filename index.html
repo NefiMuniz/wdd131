@@ -8,8 +8,6 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Nefi Muniz</title>
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -17,37 +15,53 @@
         <div class="title">
             <h1>WDD 131: Dynamic Web Fundamentals</h1>
         </div>
-    </header>
     <!-- Menu -->
-    <nav class="menu">
-        <a href="#" class="dark-grey">LinkedIn</a>
-        <a href="https://byui.instructure.com/" class="dark-grey">I-Learn</a>
-        <a href="#" class="dark-grey">Scripture</a>
-        <a href="#" class="dark-grey">Final Project</a>
-    </nav>
+        <nav class="menu">
+            <a href="#" class="dark-grey">LinkedIn</a>
+            <a href="https://byui.instructure.com/" class="dark-grey">I-Learn</a>
+            <a href="#" class="dark-grey">Scripture</a>
+            <a href="#" class="dark-grey">Final Project</a>
+        </nav>
+    </header>
 
-    <!-- Main content -->
-    <main>
-        <section class="card about-me">
-            <h2>About Me</h2>
-            <p>My name is Nefi Muniz. I was born in Porto Seguro, Bahia, Brazil! But now I live in Vitória da Conquista, Bahia, Brazil.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt vehicula erat, eget feugiat augue posuere sit amet. Sed at felis magna. Nulla facilisi.</p>
-        </section>
 
-        <section class="card web-dev-resources">
-            <h2>Web Dev Resources</h2>
-            <ul>
-                <li><a href="#">Dev.to Community</a></li>
-                <li><a href="#">Smashing Magazine</a></li>
-                <li><a href="#">CSS Tricks</a></li>
-            </ul>
-        </section>
-    </main>
+<!-- Main content -->
+<main>
+    <div class="card about-me">
+        <div class="card-header full-width">About Me</div>
+        <div class="card-content">
+            <div class="about-row">
+                <p>My name is Nefi Muniz. I was born in Porto Seguro, Bahia, Brazil! But now I live in Vitória da Conquista, Bahia, Brazil.</p>
+                <img src="images/profile.webp" alt="Profile Picture" class="profile-pic">
+            </div>
+            <div>
+                <h3 class="bahia-subtitle">Bahia, Brazil</h3>
+            </div>
+            <div class="about-row">
+                <figure>
+                    <img src="images/BrazilFlag.jpg" alt="Brazil Flag" class="flag-pic">
+                    <figcaption>Brazilian Flag</figcaption>
+                </figure>
+                <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="card web-dev-resources">
+        <div class="card-header full-width">Web Dev Resources</div>
+        <ul>
+            <li><a href="https://dev.to/">Dev.to Community</a></li>
+            <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+            <li><a href="https://www.codewars.com/">Code Wars</a></li>
+        </ul>
+    </section>
+</main>
+
 
     <!-- Footer -->
     <footer>
         <p>©<span id="currentyear"></span> Nefi Muniz, Bahia, Brazil</p>
-        <p id="lastModified"></p>
+        <p class="modif" id="lastModified"></p>
     </footer>
 </body>
 </html>

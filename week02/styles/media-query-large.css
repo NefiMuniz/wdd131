@@ -1,5 +1,5 @@
 /* Media query for screens with a min-width of 500px */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
     header {
         background-color: #000000;
         color: #ffffff;

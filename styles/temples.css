@@ -16,7 +16,7 @@ body {
 /* Header and Navigation */
 header {
     display: flex;
-    justify-content: space-between; /* Aligns items horizontally */
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     background-color: #fff8dc;

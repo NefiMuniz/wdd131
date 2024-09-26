@@ -9,15 +9,15 @@ lastModified.innerHTML = `Last updated: ${document.lastModified}`;
 // Hamburger Menu
 document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.getElementById('menu');
-    const nav = document.querySelector('nav ul');
+    const navList = document.querySelector('nav ul');
 
     menuButton.addEventListener("click", function () {
-        nav.classList.toggle("show");
+        navList.classList.toggle("show");
     });
 
     window.addEventListener("resize", function () {
         if (this.window.innerWidth >= 768) {
-            nav.classList.remove("show");
+            navList.classList.remove("show");
         }
     });
 });

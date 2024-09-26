@@ -31,8 +31,7 @@ header h1 {
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
@@ -116,31 +115,51 @@ footer p {
     content: "≡";
 }
 
-#menu.show::before {
-    content: "X";
-}
-
 nav ul {
     list-style: none;
     display: none;
     flex-direction: column;
-    align-items: flex-end;
-}
-
-nav ul li {
-    margin: 0.5rem 0;
-}
-
-nav ul li a:hover {
-    color: #fff;
-    background-color: #ffcc00;
-}
-
-.show li {
-    display: block;
+    align-items: center;
 }
 
 nav ul.show {
     display: flex;
-    flex-direction: column;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 1rem 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.9rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem;
+    }
+
+    nav ul li a:hover {
+        color: #fff;
+        background-color: #ffcc00;
+    }
+
+    .temples-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+
 }

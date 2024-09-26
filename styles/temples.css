@@ -115,19 +115,12 @@ footer p {
     content: "≡";
 }
 
-nav ul {
-    list-style: none;
-    display: none;
-    flex-direction: column;
-    align-items: center;
+#menu.show::before {
+    content: "X";
 }
 
 nav ul.show {
     display: flex;
-}
-
-#menu.show::before {
-    content: "X";
 }
 
 @media (min-width: 768px) {

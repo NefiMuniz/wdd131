@@ -13,11 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     menuButton.addEventListener("click", function () {
         navList.classList.toggle("show");
+        menuButton.classList.toggle("show");
     });
 
     window.addEventListener("resize", function () {
         if (this.window.innerWidth >= 768) {
             navList.classList.remove("show");
+            menuButton.classList.remove("show");
         }
     });
 });

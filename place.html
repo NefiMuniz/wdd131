@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Place responsible - Nefi Muniz">
+    <meta name="author" content="Nefi Muniz">
+    <title>WDD 131 - Place - Nefi Muniz</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Salvador, Bahia</h1>
+    </header>
+
+    <main>
+        <!-- Section para a imagem de fundo -->
+        <section class="background-section">
+            <picture>
+                <source srcset="images/bahia-large.webp" media="(min-width: 800px)">
+                <img src="images/bahia-small.webp" alt="Background image of the place">
+            </picture>
+            
+            <section class="info-section">
+                <div class="info-box">
+                    <h2>Data</h2>
+                    <p><strong>Area:</strong> <span>692.8 km²</span></p>
+                    <p><strong>Population:</strong> <span>2.9 million</span></p>
+                    <p><strong>Languages:</strong> <span>Portuguese</span></p>
+                    <p><strong>Currency:</strong> <span>Brazilian Real</span></p>
+                    <p><strong>Time Zone:</strong> <span>BRT (UTC -3)</span></p>
+                    <p><strong>Calling Code:</strong> <span>+55</span></p>
+                    <p><strong>Internet TLD:</strong> <span>.br</span></p>
+                </div>
+            </section>
+
+            <section class="weather-section">
+                <div class="weather-box">
+                    <h2>Weather <span class="sun-emoji">☀️</span></h2>
+                    <img src="images/sunny.svg" alt="Weather icon" class="weather-icon">            
+                    <p><strong>Temperature:</strong> <span>32ºC</span></p>
+                    <p><strong>Conditions:</strong> <span>Sunny</span></p>
+                    <p><strong>Wind:</strong> <span>10 km/h</span></p>
+                    <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Nefi Muniz, Salvador, Bahia - Brazil</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>

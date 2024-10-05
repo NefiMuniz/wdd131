@@ -1,23 +1,11 @@
-.info-box p, .weather-box p {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 0;
-}
-
-/* Labels */
-.info-box p strong, .weather-box p strong {
-    text-align: right;
-    width: 50%;
-}
-
-/* Values */
-.info-box p span, .weather-box p span {
-    text-align: left;
-    width: 50%;
+/* Definir variáveis globais em :root */
+:root {
+    --primary-color: #002776;
+    --secondary-color: #00441e;
 }
 
 body {
-    background-color: #002776;
+    background-color: var(--primary-color);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -26,13 +14,24 @@ body {
 
 header {
     text-align: center;
-    background-color: #00441e;
+    background-color: var(--secondary-color);
     padding: 20px 0;
-    color: #ffffff
+    color: #ffffff;
 }
 
 h1 {
     margin: 0;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #ffdd57;
+    margin: 10px auto 0 auto;
+    position: relative;
 }
 
 /* Background section */
@@ -60,7 +59,7 @@ h1 {
     display: inline-block;
     width: 230px;
     position: relative;
-    color: #002776;
+    color: var(--primary-color);
 }
 
 .weather-section {
@@ -75,7 +74,7 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: inline-block;
     width: 230px;
-    color: #002776;
+    color: var(--primary-color);
 }
 
 .weather-box img.weather-icon {
@@ -164,9 +163,20 @@ h1 {
     }
 }
 
+/* Efeito decorativo no rodapé com ::after */
 footer {
-    background-color: #00441e;
+    background-color: var(--secondary-color);
     text-align: center;
     padding: 10px 0;
     color: #ffffff;
+    position: relative;
+}
+
+footer::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ffdd57;
+    margin: 10px auto 0 auto;
 }

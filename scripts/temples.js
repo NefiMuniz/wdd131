@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     window.addEventListener("resize", function () {
-        if (this.window.innerWidth >= 768) {
+        if (this.window.innerWidth >= 640) {
             navList.classList.remove("show");
             menuButton.classList.remove("show");
         }

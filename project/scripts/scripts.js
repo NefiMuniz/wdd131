@@ -16,10 +16,3 @@ hamburger.addEventListener('click', () => {
     hamburger.setAttribute('aria-expanded', !expanded);
     navMenu.classList.toggle('show');
 });
-
-document.getElementById('ask-question').addEventListener('change', function() {
-    const topicSelect = document.getElementById('topic');
-    const questionField = document.getElementById('question');
-    topicSelect.disabled = !this.checked;
-    questionField.disabled = !this.checked;
-});

@@ -8,10 +8,10 @@
     <title>Account Task Manager - Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-    <script defer src="scripts/scripts.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
-    <header>
+    <header class="pin-header">
         <h1>Account Task Manager</h1>
         <nav>
             <button id="hamburger" aria-label="menu" aria-expanded="false">&#9776;</button>
@@ -26,62 +26,97 @@
 
     <main>
         <header>
-            <h2>Attractive header</h2>
+            <h2>Stay Ahead of Your Business Obligations</h2>
         </header>
         <section class="attractive-section">
             <div>
-                <p>Attractive text about the purpose</p>
+                <p>Subscribe to our newsletter for timely updates and insights on accessory obligations essential for smooth business management.
+                    <a href="#subscription-form">Sign Up Now!</a>
+                </p>
             </div>
             <div>
-                <img src="image1.jpg" alt="Description">
+                <img src="images/attractive_image.jpg" alt="Business Management">
             </div>
         </section>
 
         <header>
-            <h2>Header about</h2>
+            <h2>About Our Information Services</h2>
         </header>
         <section class="about-section">
             <div>
-                <p>Left text area ...</p>
+                <p>In today’s fast-paced world, staying informed on business obligations is crucial for compliance and avoiding costly penalties. Our resources keep you in sync with regulatory updates tailored for the Brazilian market.</p>
             </div>
             <div>
-                <p>Right text area ...</p>
+                <p>As an entrepreneur, having a pulse on these requirements allows you to focus on growing your business. Join us to take proactive steps in your company’s financial health and compliance strategy.</p>
             </div>
         </section>
 
         <header>
-            <h2>Pages</h2>
+            <h2>Our Pages</h2>
         </header>
         <section class="pages-section">
             <figure>
-                <img src="page1.jpg" alt="Obligations">
-                <figcaption>Page 1 description</figcaption>
+                <img src="images/obligations.jpg" alt="Obligations">
+                <figcaption>Accessory Obligations: Navigate critical requirements efficiently.</figcaption>
             </figure>
             <figure>
-                <img src="page2.jpg" alt="Taxes">
-                <figcaption>Page 2 description</figcaption>
+                <img src="images/taxes.jpg" alt="Taxes">
+                <figcaption>Taxes: Keep track of your tax responsibilities.</figcaption>
             </figure>
             <figure>
-                <img src="page3.jpg" alt="Fines">
-                <figcaption>Page 3 description</figcaption>
+                <img src="images/fines.jpg" alt="Fines">
+                <figcaption>Fines: Avoid penalties with proactive management.</figcaption>
             </figure>
         </section>
 
-        <section class="newsletter">
+        <!-- <section class="newsletter">
             <h3>Subscribe to Our Newsletter</h3>
             <form>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="name">Your Name:</label>
+                <input type="name" id="name" name="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section> -->
+
+        <section class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form id="subscription-form">
+                <!-- Required Fields -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="company">Company's Name:</label>
+                    <input type="text" id="company" name="company" required>
+        
+                    <label for="size">Business Size:</label>
+                    <select id="size" name="size" required>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="enterprise">Enterprise</option>
+                    </select>
+                </fieldset>
+        
+                </fieldset>
+        
                 <button type="submit">Subscribe</button>
             </form>
         </section>
+        
     </main>
 
     <footer>
         <div class="social-media">
-            <a href="https://facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="https://linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-            <a href="https://instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
         </div>
         <div class="footer-info">
             <p>&copy; <span id="year"></span> Nefi Muniz<br>Last updated: <span id="lastModified"></span></p>

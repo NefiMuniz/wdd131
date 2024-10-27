@@ -1,31 +1,27 @@
 // Obligations data for each category
 const obligationsData = {
     large: [
-        { name: 'GFIP (Guia de Recolhimento do FGTS)', area: 'HR', period: 'Monthly', dueDate: '7th of the following month' },
-        { name: 'EFD Contribuições', area: 'Accounting', period: 'Monthly', dueDate: '15th of the following month' },
+        { name: 'E-Social', area: 'HR', period: 'Monthly', dueDate: '15th of the following month' },
+        { name: 'DCTFWeb', area: 'HR/Tax', period: 'Monthly', dueDate: '15th of the following month' },
         { name: 'DCTF', area: 'Tax Writing', period: 'Monthly', dueDate: '15th of the following month' },
-        { name: 'DIRF', area: 'Accounting', period: 'Annual', dueDate: '28th of February' },
-        { name: 'RAIS', area: 'HR', period: 'Annual', dueDate: '5th of March' }
+        { name: 'DIRF', area: 'HR', period: 'Annual', dueDate: '28th of February' },
+        { name: 'ECD', area: 'Accounting', period: 'Annual', dueDate: '30th of June' }
     ],
     medium: [
-        { name: 'Simples Nacional', area: 'Tax Writing', period: 'Monthly', dueDate: '20th of the following month' },
-        { name: 'E-Social', area: 'HR', period: 'Monthly', dueDate: '7th of the following month' },
-        { name: 'DEFIS', area: 'Accounting', period: 'Annual', dueDate: '31st of March' },
-        { name: 'EFD Fiscal', area: 'Accounting', period: 'Monthly', dueDate: '20th of the following month' },
-        { name: 'GFIP', area: 'HR', period: 'Monthly', dueDate: '7th of the following month' }
+        { name: 'E-Social', area: 'HR', period: 'Monthly', dueDate: '15th of the following month' },
+        { name: 'PIS/COFINS', area: 'Tax Writing', period: 'Monthly', dueDate: '20th of the following month' },
+        { name: 'EFD ICMS', area: 'Accounting', period: 'Monthly', dueDate: '25th of the 2nd following month' },
+        { name: 'Income Report', area: 'HR', period: 'Annual', dueDate: '31th of March' },
+        { name: 'ECF', area: 'Accounting', period: 'Annual', dueDate: '31th of July' },
     ],
     simple: [
-        { name: 'PGDAS-D', area: 'Accounting', period: 'Monthly', dueDate: '20th of the following month' },
-        { name: 'E-Social', area: 'HR', period: 'Monthly', dueDate: '7th of the following month' },
-        { name: 'DEFIS', area: 'Accounting', period: 'Annual', dueDate: '31st of March' },
-        { name: 'RAIS', area: 'HR', period: 'Annual', dueDate: '5th of March' },
-        { name: 'GFIP', area: 'HR', period: 'Monthly', dueDate: '7th of the following month' }
+        { name: 'PGDAS-D', area: 'Tax', period: 'Monthly', dueDate: '20th of the following month' },
+        { name: 'E-Social', area: 'HR', period: 'Monthly', dueDate: '15th of the following month' },
+        { name: 'DEFIS', area: 'Accounting', period: 'Annual', dueDate: '31st of March' }
     ],
     individual: [
         { name: 'MEI DAS', area: 'Tax Writing', period: 'Monthly', dueDate: '20th of the following month' },
-        { name: 'E-Social', area: 'HR', period: 'Monthly', dueDate: '7th of the following month' },
-        { name: 'DEFIS', area: 'Accounting', period: 'Annual', dueDate: '31st of March' },
-        { name: 'RAIS', area: 'HR', period: 'Annual', dueDate: '5th of March' },
+        { name: 'E-Social', area: 'HR', period: 'Monthly', dueDate: '15th of the following month' },
         { name: 'DASN-SIMEI', area: 'Accounting', period: 'Annual', dueDate: '31st of May' }
     ]
 };

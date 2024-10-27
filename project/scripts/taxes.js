@@ -15,7 +15,7 @@ const taxesData = {
         { name: 'ICMS', rate: 'Varies by state', description: 'State Value Added Tax' }
     ],
     simple: [
-        { name: 'Simples Nacional', rate: 'Varies by revenue', description: 'Unified tax regime for small businesses' },
+        { name: 'DAS', rate: 'Varies by revenue', description: 'Unified tax regime for small businesses' },
         { name: 'ISS', rate: '2% to 5%', description: 'Municipal Service Tax' },
         { name: 'ICMS', rate: 'Varies by state', description: 'State Value Added Tax' }
     ],
